@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="tweet" method="POST">
+            {% csrf_token %}
+            <label for="username">Enter your name: </label>
+            <input type="text" name="username" id="username" required>
+            <label for="tweet">Enter your text: </label>
+            <input type="text" name="tweet" id="tweet" required>
+            <input type="submit" value="Send">
+        </form>
+    </body>
+</html>

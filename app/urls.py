@@ -2,5 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.TweetListCreate.as_view()),
+    path('lasttweets', views.TweetListCreate.as_view()),
+    path('tweet', views.TweetSave),
+    path('', views.index),
 ]
